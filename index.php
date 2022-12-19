@@ -24,17 +24,9 @@ $products = [
 var_dump($products);
 
 foreach ($products as $elem) {
-    echo $elem->immagine;
-    echo "<br>";
-    echo $elem->nome;
-    echo "<br>";
-    echo $elem->prezzo;
-    echo "<br>";
-    echo $elem->oggettoCategoria->nome;
-    echo "<br>";
-    echo $elem->oggettoCategoria->icon;
-    echo "<br>";
-    echo "<br>";
+    echo $elem->immagine . "<br>" . $elem->nome . "<br>" . $elem->prezzo . "<br>" . $elem->oggettoCategoria->nome . "<br>" . $elem->oggettoCategoria->icon . "<br>";
+    echo $elem->printAttributiSpecificiClasse();
+    echo "<hr>";
 }
 
 ?>

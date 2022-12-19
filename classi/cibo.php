@@ -19,4 +19,9 @@ class Cibo extends Prodotto
         $this->ingredienti = $ingredienti;
         parent::__construct($immagine, $nome, $prezzo, $merda);
     }
+
+    public function printAttributiSpecificiClasse()
+    {
+        echo $this->pesoNetto . "<br>" . $this->ingredienti;
+    }
 }

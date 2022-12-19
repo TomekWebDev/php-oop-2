@@ -19,4 +19,9 @@ class Accessorio extends Prodotto
         $this->dimensioni = $dimensioni;
         parent::__construct($immagine, $nome, $prezzo, $merda);
     }
+
+    public function printAttributiSpecificiClasse()
+    {
+        echo $this->materiale . "<br>" . $this->dimensioni;
+    }
 }
