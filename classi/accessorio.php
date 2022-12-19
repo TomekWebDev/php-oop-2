@@ -1,9 +1,9 @@
 <?php
-include_once __DIR__ . '/podotto.php';
+include_once __DIR__ . '/prodotto.php';
 
-class Cibo extends Prodotto
+class Accessorio extends Prodotto
 {
-    public $caratteristiche;
+    public $materiale;
     public $dimensioni;
 
     public function __construct(
@@ -12,11 +12,11 @@ class Cibo extends Prodotto
         Float $prezzo,
         Categoria $merda,
 
-        String $caratteristiche,
+        String $materiale,
         String $dimensioni
     ) {
-        $this->pesoNetto = $caratteristiche;
-        $this->ingredienti = $dimensioni;
+        $this->materiale = $materiale;
+        $this->dimensioni = $dimensioni;
         parent::__construct($immagine, $nome, $prezzo, $merda);
     }
 }

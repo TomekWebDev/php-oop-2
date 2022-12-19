@@ -7,7 +7,7 @@ class Prodotto
     public $immagine;
     public $nome;
     public $prezzo;
-    public $porcodio;
+    public $oggettoCategoria;
 
     public function __construct(
         String $immagine,
@@ -18,6 +18,6 @@ class Prodotto
         $this->immagine = $immagine;
         $this->nome = $nome;
         $this->prezzo = $prezzo;
-        $this->porcodio = $merda;
+        $this->oggettoCategoria = $merda;
     }
 }

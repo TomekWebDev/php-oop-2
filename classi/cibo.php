@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . '/podotto.php';
+include_once __DIR__ . '/prodotto.php';
 
 class Cibo extends Prodotto
 {
